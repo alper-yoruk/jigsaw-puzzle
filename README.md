@@ -1,4 +1,4 @@
-# jigsaw-puzzle
+# Jigsaw Puzzle
 
 Project for CTIS255 - Web Technologies I
 
