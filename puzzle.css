@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: "Lora", serif;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 25px 0;
+  margin-bottom: 50px;
+  box-shadow: 0 0 10px 0 #999;
+  background: #a92323;
+  font-family: "Lora", serif;
+  color: #fff;
+}
+
+header h1 {
+  color: #fff;
+}
+
+header span {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 10px;
+  display: block;
+}
+
+.puzzleImage {
+  background-image: url(images/puzzle.jpg);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.piecesContainer,
+.puzzleContainer,
+.imageContainer {
+  width: 33%;
+  min-width: 340px;
+  padding: 0 40px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.piecesContainer h2,
+.puzzleContainer h2,
+.imageContainer h2 {
+  font-size: 20px;
+  padding: 10px 0;
+  font-style: italic;
+}
+
+.original,
+.pieces,
+.solvedPieces {
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  font-size: 0;
+}
+
+.original {
+  width: 300px;
+  height: 300px;
+}
+
+.pieces {
+  background: #a92323;
+  position: relative;
+}
+
+.pieces div.piece {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border: 2px solid #ccc;
+}
+
+div.piece.selectedPiece {
+  border: 2px solid yellow;
+  z-index: 999 !important;
+}
+
+.solvedPieces,
+.pieces {
+  width: 302px;
+  height: 302px;
+}
+
+.solvedPieces {
+  background: #bbb;
+}
+
+.solvedPieces > div {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+}
+
+.solveContainer {
+  margin-top: 30px;
+}
+
+#solvePuzzle {
+  text-decoration: none;
+  color: #a92323;
+  font-family: "Lora";
+  font-style: italic;
+  font-size: 20px;
+  padding: 10px 30px;
+  display: inline-block;
+  border: 2px solid #a92323;
+  border-radius: 25px;
+}
+
+#solvePuzzle:hover {
+  background: #a92323;
+  color: #fff;
+}
+
+#message {
+  position: fixed;
+  text-align: center;
+  width: 700px;
+  font-family: "Lora", serif;
+  background: rgba(51, 51, 51, 0.97);
+  color: #fff;
+  padding: 35px 0;
+  z-index: 999999;
+  font-size: 50px;
+  font-style: italic;
+  left: 50%;
+  top: 30%;
+  margin-left: -350px;
+  display: none;
+}
